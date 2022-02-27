@@ -4,3 +4,4 @@ require "user.plugins"
 require "user.colorscheme"
 vim.cmd "colorscheme onedark"
 require "user.cmp"
+
