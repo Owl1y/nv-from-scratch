@@ -5,4 +5,6 @@ require "user.colorscheme"
 vim.cmd "colorscheme onedark"
 require "user.cmp"
 require "user.lsp"
+require "user.telescope"
+
 
