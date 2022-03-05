@@ -3,8 +3,7 @@ local fn = vim.fn
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
-  PACKER_BOOTSTRAP = fn.system {
-    "git",
+  PACKER_BOOTSTRAP = fn.system { "git",
     "clone",
     "--depth",
     "1",
@@ -58,6 +57,8 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use 'andweeb/presence.nvim'
+
 
   -- Colorschemes
   use "joshdick/onedark.vim"
